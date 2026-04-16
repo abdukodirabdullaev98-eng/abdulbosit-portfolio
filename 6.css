@@ -1,0 +1,151 @@
+/* Asosiy tanlovlar va body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+/* Header va navbar */
+.heder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1e90ff;
+    color: rgba(0, 122, 209, 0.792);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ffeb3b;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+.navbar a.actibve {
+    border-bottom: 2px solid #ffeb3b;
+}
+
+/* Menu icon (responsive uchun) */
+#menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Guruh kartalari container */
+.con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 50px;
+}
+
+/* Har bir kartani styling */
+.ggggg {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin: 20px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ggggg:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Rasmlar */
+.ooo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1e90ff;
+}
+
+/* Ism va info */
+.gg {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+
+.zss {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Rasm guruh container */
+.qde {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.qde img {
+    width: 300px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+/* Footer bo'sh div (agar kerak bo'lsa) */
+.d {
+    height: 50px;
+}
+
+/* Responsive dizayn */
+@media screen and (max-width: 900px) {
+    .con {
+        padding: 20px;
+    }
+
+    .ggggg {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .heder {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .ggggg {
+        width: 90%;
+    }
+}

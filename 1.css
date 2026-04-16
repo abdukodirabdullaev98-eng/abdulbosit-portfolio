@@ -16,3 +16,11 @@ header {
 header h1 {
     margin: 0;
     font-size: 32px;}
+.header{
+    display: flex
+}
+.nav{
+    display: flex;
+    gap: 40px;
+    border: none;
+}
